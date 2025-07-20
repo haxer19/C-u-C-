@@ -50,7 +50,7 @@ def _rs_t_():
 def _check_update_():
     local = _check_v_()
     remote = _get_v_()
-    print(f"Phiên bản hiện tại: {local} | Phiên bản trên GitHub: {remote}")
+    print(f"Phiên bản hiện tại: {local}")
     if remote and remote != local:
         choice = input("Có bản cập nhật mới. Bạn có muốn cập nhật? (Y/N): ").lower()
         if choice == 'y':
