@@ -2,8 +2,6 @@ import os,json,random,asyncio,logging
 from discord.ext import commands
 from updater import _check_update_,_check_v_
 
-_check_update_()
-
 with open("config.json", "r") as config_file:
     config = json.load(config_file)
 
@@ -173,4 +171,9 @@ async def _td_câucá_():
         
         await asyncio.sleep(random.randint(3, 6))
 
-TienThanh.run(TOKEN)
+async def main():
+    _check_update_()
+    os.system('cls' if os.name == 'nt' else 'clear')
+    await TienThanh.start(TOKEN)
+
+asyncio.run(main())
