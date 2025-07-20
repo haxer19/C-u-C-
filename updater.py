@@ -1,7 +1,7 @@
 import requests,os,zipfile,shutil
 
 GITHUB_REPO_URL = "https://github.com/haxer19/C-u-C-"
-RAW_VERSION_URL = "https://github.com/haxer19/C-u-C-/main/version.txt"
+RAW_VERSION_URL = "https://raw.githubusercontent.com/haxer19/C-u-C-/main/version.txt"
 ZIP_URL = "https://github.com/haxer19/C-u-C-/archive/refs/heads/main.zip"
 
 LOCAL_VERSION_FILE = "version.txt"
