@@ -172,7 +172,7 @@ async def _td_câucá_():
                 votso_msg = await TienThanh.wait_for("message", check=_kiểmtra_rep_, timeout=5)
                 await _tdBáncá_()
             except asyncio.TimeoutError:
-                pass
+                continue
         except:
             pass
         
