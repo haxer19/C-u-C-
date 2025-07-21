@@ -12,7 +12,7 @@ PREFIX = config["PREFIX"]
 TienThanh=commands.Bot(command_prefix=PREFIX, self_bot=True)
 TienThanh.remove_command("help")
 
-cauca=1293109493948878929
+_botID_=1293109493948878929
 banca=1393234820271968467 
 _idkenh_=None
 running=True
@@ -64,7 +64,7 @@ async def _tdBáncá_():
         def check_banca_reply(msg):
             try:
                 return (
-                    msg.author.id == cauca and msg.reference and msg.reference.message_id == sent.id and msg.embeds and msg.embeds[0].author and "cửa hàng bán cá" in msg.embeds[0].author.name.lower())
+                    msg.author.id == _botID_ and msg.reference and msg.reference.message_id == sent.id and msg.embeds and msg.embeds[0].author and "cửa hàng bán cá" in msg.embeds[0].author.name.lower())
             except:
                 return False
 
@@ -95,7 +95,7 @@ async def _td_câucá_():
         try:
             _kiểmtra_+=1
             if _kiểmtra_%20==0:
-                await asyncio.sleep(300)
+                kt_td=await channel.send("fs tuido")
             
             sent_msg = await channel.send("fs cauca")
         except:
@@ -104,7 +104,7 @@ async def _td_câucá_():
         
         def kt_rep1(msg):
             try:
-                return (msg.author.id == cauca and msg.reference and msg.reference.message_id == sent_msg.id and msg.embeds and msg.embeds[0].author and "Đang thả mồi câu" in msg.embeds[0].author.name)
+                return (msg.author.id == _botID_ and msg.reference and msg.reference.message_id == sent_msg.id and msg.embeds and msg.embeds[0].author and "Đang thả mồi câu" in msg.embeds[0].author.name)
             except:
                 return False
 
@@ -167,7 +167,7 @@ async def _td_câucá_():
             await TienThanh.wait_for("message_edit", check=_dấuhiệu_)
             await asyncio.sleep(3)
             await channel.send("fs votso")
-            def _kiểmtra_rep_(msg): return (msg.author.id == cauca and msg.embeds and _daytuido_(msg.embeds[0]))
+            def _kiểmtra_rep_(msg): return (msg.author.id == _botID_ and msg.embeds and _daytuido_(msg.embeds[0]))
             try:
                 votso_msg = await TienThanh.wait_for("message", check=_kiểmtra_rep_, timeout=5)
                 await _tdBáncá_()
