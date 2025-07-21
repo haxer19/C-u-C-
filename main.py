@@ -153,7 +153,7 @@ async def _td_câucá_():
                     chosen=random.choices(_chọn14_,weights=__tỉ_lệ__,k=1)[0]
                     await chosen.click()
                 except:
-                    pass
+                    continue
         except:
             continue
 
