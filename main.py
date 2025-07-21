@@ -95,7 +95,7 @@ async def _td_câucá_():
         try:
             _kiểmtra_+=1
             if _kiểmtra_%20==0:
-                kt_td=await channel.send("fs tuido")
+                await asyncio.sleep(300)
             
             sent_msg = await channel.send("fs cauca")
         except:
