@@ -89,13 +89,13 @@ async def _td_câucá_():
         running = False
         return
 
-    _kiểmtra_=0
+    # _kiểmtra_=0
 
     while running:
         try:
-            _kiểmtra_+=1
-            if _kiểmtra_%20==0:
-                await asyncio.sleep(300)
+            # _kiểmtra_+=1
+            # if _kiểmtra_%20==0:
+            #     await asyncio.sleep(300)
             
             sent_msg = await channel.send("fs cauca")
         except:

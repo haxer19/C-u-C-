@@ -52,7 +52,7 @@ def _check_update_():
     remote = _get_v_()
     print(f"Phiên bản hiện tại: {local}")
     if remote and remote != local:
-        choice = input("Có bản cập nhật mới. Bạn có muốn cập nhật? (Y/N): ").lower()
+        choice = input(f"Có phiên bản mới {remote}. Bạn có muốn cập nhật? (Y/N): ").lower()
         if choice == 'y':
             _rs_t_()
             print("Vui lòng khởi động lại chương trình.")
